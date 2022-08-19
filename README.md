@@ -1,6 +1,6 @@
 # Texoit
 
-This project is a test porpuse created using Angular2+, fontawesome and bootstrap/ngbootstrap.
+This project is a testing purpose created using Angular2+, fontawesome and bootstrap/ngbootstrap.
 
 ## How to install
 
