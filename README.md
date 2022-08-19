@@ -1,10 +1,10 @@
 # Texoit
 
-This project is a testing purpose created using Angular2+, fontawesome and bootstrap/ngbootstrap.
+This project is a testing purpose created using [Angular2+](https://angular.io/), [fontawesome](https://fontawesome.com/) and [bootstrap/ngbootstrap](https://ng-bootstrap.github.io/#/home).
 
 ## How to install
 
-Run `yarn install` or `npm install` to install dependencies. I recommend to use yarn.
+Run `yarn install` or `npm install` to install dependencies. I recommend to use [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable).
 
 ## Running unit tests
 
