@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-12">
+
+        <h5 id="list-title" class="h5 fw-semibold">List movies</h5>
+
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">
+                        Year
+                        <input type="number" class="form-control form-control-sm" [(ngModel)]="filter.year" placeholder="Filter by year" (change)="search(true)">
+                    </th>
+                    <th class="text-center">Title</th>
+                    <th class="text-center">
+                        Winner?
+                        <select name="" id="" class="form-control form-control-sm text-center" [(ngModel)]="filter.winner" (change)="search(true)">
+                            <option [ngValue]="undefined" selected>Yes/No</option>
+                            <option [value]="true">Yes</option>
+                            <option [value]="false">No</option>
+                        </select>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of movieList?.content">
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.year }}</td>
+                    <td>{{ item.title }}</td>
+                    <td>{{ item.winner ? 'Yes' : 'No' }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <ngb-pagination
+            class="d-flex justify-content-center"
+            [(page)]="movieList.number"
+            [pageSize]="movieList.size"
+            [collectionSize]="movieList.totalElements"
+            [boundaryLinks]="true"
+            (pageChange)="changePage()"
+        ></ngb-pagination>
+        
+    </div>
+</div>

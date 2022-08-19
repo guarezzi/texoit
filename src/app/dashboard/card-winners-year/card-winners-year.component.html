@@ -1,0 +1,44 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="h5 fw-semibold">List movie winners by year</h5>
+
+        <div class="row mb-3">
+            <div class="col-10">
+                <div class="form-group">
+                    <input type="number" class="form-control form-control-sm" [(ngModel)]="year">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form-group">
+                    <button type="button" class="btn btn-sm btn-primary" [disabled]="!year" (click)="search()">
+                        <i class="fa fa-fw fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <table class="table table-sm table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Year</th>
+                                <th>Title</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of result">
+                                <td>{{ item.id }}</td>
+                                <td>{{ item.year }}</td>
+                                <td>{{ item.title }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

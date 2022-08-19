@@ -1,0 +1,46 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="h5 fw-semibold">Producers with longest and shortest interval between wins</h5>
+        
+        <h4 id="maximum-title" class="h4">Maximum</h4>
+        <table id="maximum-table" class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Producer</th>
+                    <th>Interval</th>
+                    <th>Previous Year</th>
+                    <th>Following Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let max of winners.max">
+                    <td>{{ max.producer}}</td>
+                    <td>{{ max.interval}}</td>
+                    <td>{{ max.previousWin}}</td>
+                    <td>{{ max.followingWin}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="minimum-title" class="h4">Minimum</h4>
+        <table id="minimum-table" class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Producer</th>
+                    <th>Interval</th>
+                    <th>Previous Year</th>
+                    <th>Following Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let min of winners.min">
+                    <td>{{ min.producer}}</td>
+                    <td>{{ min.interval}}</td>
+                    <td>{{ min.previousWin}}</td>
+                    <td>{{ min.followingWin}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

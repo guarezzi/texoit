@@ -1,0 +1,26 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <app-card-winners-multiple [winners]="multipleWinners"></app-card-winners-multiple>
+        </div>
+
+        <div class="col-md-6">
+            <app-card-winners-top [winners]="topWinners"></app-card-winners-top>
+        </div>
+
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-md-6">
+            <app-card-interval [winners]="IntervalWinners"></app-card-interval>
+        </div>
+
+        <div class="col-md-6">
+            <app-card-winners-year></app-card-winners-year>
+        </div>
+
+    </div>
+</div>
